@@ -58,3 +58,8 @@ create table pedidos (
 );
 
 select * from pedidos;
+
+insert into status (tipo) values ("Em produção"), ("Em entrega"), ("Concluído");
+insert into massas (tipo) values ("Massa comum"), ("Massa temperada"), ("Massa integral");
+insert into bordas (tipo) values ("Cheddar"), ("Catupiry"), ("Chocolate");
+insert into sabores (nome) values ("4 queijos"), ("Frango"), ("Lombo"), ("Calabresa"), ("Filé"), ("Brócolis"), ("Sorvete"), ("Prestígio");
