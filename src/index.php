@@ -6,7 +6,7 @@
     <h1>Faça seu Pedido</h1>
 </div>
 
-<div id="maincontainer">
+<div id="main-container">
     <div id="container">
         <div class="row">
             <div class="col-md-12">
