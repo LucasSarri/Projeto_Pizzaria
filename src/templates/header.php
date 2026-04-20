@@ -1,3 +1,14 @@
+<?php
+    $msg = "";
+    
+    if (isset($_SESSION["msg"])) {
+        $msg = $_SESSION["msg"];
+        $status = $_SESSION["status"];
+
+        unset($_SESSION["msg"]);
+        unset($_SESSION["status"]);
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,6 +38,8 @@
         </nav>
     </header>
 
-    <div class="alert alert-success">
-        <p>Pedido feito com sucesso!</p>
-    </div>
+    <?php if (!empty($msg)): ?>
+        <div class="alert alert-<?= $status ?>">
+            <p><?= $msg ?></p>
+        </div>
+    <?php endif; ?>
