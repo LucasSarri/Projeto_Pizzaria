@@ -1,6 +1,7 @@
 <?php
     include_once("process/conn.php");
     include_once("templates/header.php");
+    include_once("process/orders.php");
 ?>
 
 <div id="main-container-dashboard">
